@@ -7,6 +7,7 @@ background: -webkit-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1
 background: -o-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
 background: -ms-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
 background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
+
 }
 
 .flex-header {
