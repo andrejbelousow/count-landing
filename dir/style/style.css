@@ -1,0 +1,82 @@
+.flex-header, .flex-toolbar {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #35942e;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #35942e), color-stop(100%, #272a15));
+  background: linear-gradient(45deg, #35942e 0%, #272a15 100%);
+}
+
+.flex-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.flex-item h1 {
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.5px;
+  font-size: 35px;
+  color: white;
+}
+
+.flex-item a img {
+  width: 60px;
+}
+
+.toolbar {
+  background-color: #111;
+  padding: 10px 0;
+}
+
+.flex-toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-toolbar-item {
+  margin-left: 15px;
+}
+
+.flex-toolbar-number, .flex-toolbar-email p {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.flex-toolbar-questions div {
+  background-image: url(../images/);
+}
+
+.flex-toolbar-questions p {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: #ababab;
+  font-weight: 700;
+}
+
+.flex-toolbar-number div {
+  background-image: url();
+}
+
+.flex-toolbar-email div {
+  background-image: url();
+}
+/*# sourceMappingURL=style.css.map */
