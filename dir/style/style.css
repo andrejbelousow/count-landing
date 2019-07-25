@@ -4,9 +4,9 @@
 }
 
 .header {
-  background: #35942e;
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #35942e), color-stop(100%, #272a15));
-  background: linear-gradient(45deg, #35942e 0%, #272a15 100%);
+  position: relative;
+  background-image: url(../images/logo-back.jpg);
+  background-repeat: no-repeat;
 }
 
 .flex-header {
@@ -21,20 +21,25 @@
   padding: 50px 0;
 }
 
-.flex-item h1 {
-  font-family: "Roboto Slab", serif;
+.flex-header-item h1 {
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
-  font-size: 35px;
+  font-size: 42px;
   color: white;
 }
 
-.flex-item a img {
+.flex-header-item a img {
   width: 60px;
 }
 
 .toolbar {
   background-color: #111;
+  opacity: 0.8;
   padding: 10px 0;
+}
+
+.toolbar:hover {
+  opacity: 1;
 }
 
 .flex-toolbar {
@@ -59,22 +64,23 @@
   margin-left: 15px;
 }
 
-.flex-toolbar-number, .flex-toolbar-email a {
-  font-family: "Roboto Slab", serif;
+.flex-toolbar-number a, .flex-toolbar-email a {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #fff;
+  color: white;
   font-weight: 700;
   letter-spacing: 1px;
   text-decoration: none;
 }
 
-.flex-toolbar-number:hover, .flex-toolbar-email a:hover {
+.flex-toolbar-number a:hover, .flex-toolbar-number a:visited, .flex-toolbar-email a:hover, .flex-toolbar-email a:visited {
   text-decoration: underline;
   cursor: pointer;
+  color: white;
 }
 
 .flex-toolbar-questions p {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #ababab;
   font-weight: 700;
@@ -93,5 +99,18 @@
   width: 20px;
   height: 20px;
   margin-right: 8px;
+}
+
+.additional-info {
+  margin: 67px auto 0 auto;
+  max-width: 600px;
+}
+
+.additional-info__text {
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  text-align: justify;
+  font-size: 16px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

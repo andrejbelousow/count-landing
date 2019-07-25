@@ -1,4 +1,4 @@
-$roboto-slab: 'Roboto Slab', serif;
+$roboto: 'Roboto', sans-serif;
 $open-sans: 'Open Sans', serif;
 $white: white;
 $light-weight: 300;
@@ -10,14 +10,17 @@ $bold-weight: 700;
 }
 
 .header {
-background: rgba(53,148,46,1);
-background: -moz-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(53,148,46,1)), color-stop(100%, rgba(39,42,21,1)));
-background: -webkit-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
-background: -o-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
-background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
-
+position: relative;
+// background: rgba(53,148,46,1);
+// background: -moz-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
+// background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(53,148,46,1)), color-stop(100%, rgba(39,42,21,1)));
+// background: -webkit-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
+// background: -o-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
+// background: -ms-linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
+// background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
+// height: 550px;
+background-image: url(../images/logo-back.jpg);
+background-repeat: no-repeat;
 }
 
 .flex-header {
@@ -28,11 +31,11 @@ background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
     padding: 50px 0;
 }
 
-.flex-item {
+.flex-header-item {
     h1 {
-        font-family: $roboto-slab;
+        font-family: $roboto;
         letter-spacing: 0.5px;
-        font-size: 35px;
+        font-size: 42px;
         color: $white;
     }
 
@@ -43,7 +46,12 @@ background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
 
 .toolbar {
     background-color:#111;
+    opacity: 0.8;
     padding: 10px 0;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .flex-toolbar {
@@ -57,17 +65,18 @@ background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
             margin-left: 15px;
         }
 
-        &-number, &-email a {
-            font-family: $roboto-slab;
+        &-number a, &-email a {
+            font-family: $roboto;
             font-size: 14px;
-            color: #fff;
+            color: $white;
             font-weight: $bold-weight;
             letter-spacing: 1px;
             text-decoration: none;
 
-            &:hover {
+            &:hover, &:visited {
                 text-decoration: underline;
                 cursor: pointer;
+                color: $white;
             }
 
         }
@@ -75,7 +84,7 @@ background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
         &-questions {
             
             p {
-                font-family: $roboto-slab;
+                font-family: $roboto;
                 font-size: 14px;
                 color: #ababab;
                 font-weight: $bold-weight;
@@ -101,4 +110,17 @@ background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
             }
         }
         
+}
+
+.additional-info {
+    margin: 67px auto 0 auto;
+    max-width: 600px;
+
+    &__text {
+        font-family: $roboto;
+        line-height: 30px;
+        text-align: justify;
+        font-size: 16px;
+        color: $white;
+    }
 }
