@@ -50,19 +50,27 @@
 }
 
 .flex-toolbar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 15px;
 }
 
-.flex-toolbar-number, .flex-toolbar-email p {
+.flex-toolbar-number, .flex-toolbar-email a {
   font-family: "Roboto Slab", serif;
   font-size: 14px;
   color: #fff;
   font-weight: 700;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
-.flex-toolbar-questions div {
-  background-image: url(../images/);
+.flex-toolbar-number:hover, .flex-toolbar-email a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .flex-toolbar-questions p {
@@ -73,10 +81,17 @@
 }
 
 .flex-toolbar-number div {
-  background-image: url();
+  display: block;
+  background-image: url(../images/svg/phone.svg);
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 
 .flex-toolbar-email div {
-  background-image: url();
+  background-image: url(../images/svg/email.svg);
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 /*# sourceMappingURL=style.css.map */

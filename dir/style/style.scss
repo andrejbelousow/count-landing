@@ -52,21 +52,27 @@ background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
     justify-content: flex-start;
     align-items: center;
         &-item {
+            display: flex;
+            align-items: center;
             margin-left: 15px;
         }
 
-        &-number, &-email p {
+        &-number, &-email a {
             font-family: $roboto-slab;
             font-size: 14px;
             color: #fff;
             font-weight: $bold-weight;
             letter-spacing: 1px;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
         }
 
         &-questions {
-            div {
-                background-image: url(../images/);
-            }
             
             p {
                 font-family: $roboto-slab;
@@ -78,13 +84,21 @@ background: linear-gradient(45deg, rgba(53,148,46,1) 0%, rgba(39,42,21,1) 100%);
 
         &-number {
             div {
-                background-image: url();
+                display: block;
+                background-image: url(../images/svg/phone.svg);
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
             }
         }
 
         &-email {
             div {
-                background-image: url();
+                background-image: url(../images/svg/email.svg);
+                width: 20px;
+                height: 20px;
+                margin-right: 8px;
             }
-        } 
+        }
+        
 }
