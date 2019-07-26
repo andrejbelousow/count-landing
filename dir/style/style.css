@@ -1,4 +1,4 @@
-.flex-header, .flex-toolbar {
+.flex-wrap, .flex-toolbar {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -7,35 +7,59 @@
   position: relative;
   background-image: url(../images/logo-back.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 150px;
+}
+
+.flex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .flex-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 924px;
+  padding: 50px 0 25px 0;
 }
 
-.flex-header-item h1 {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 42px;
-  color: white;
+.flex-header-logo {
+  margin-right: 65px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.flex-header-item a img {
+.flex-header-logo a img {
   width: 60px;
+}
+
+.flex-header-title h1 {
+  width: 400px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5.5px;
+  font-size: 45px;
+  color: white;
 }
 
 .toolbar {
   background-color: #111;
-  opacity: 0.8;
+  opacity: 0.6;
   padding: 10px 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .toolbar:hover {
@@ -52,6 +76,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 1;
 }
 
 .flex-toolbar-item {
@@ -73,9 +98,13 @@
   text-decoration: none;
 }
 
-.flex-toolbar-number a:hover, .flex-toolbar-number a:visited, .flex-toolbar-email a:hover, .flex-toolbar-email a:visited {
+.flex-toolbar-number a:hover, .flex-toolbar-email a:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: white;
+}
+
+.flex-toolbar-number a:visited, .flex-toolbar-email a:visited {
   color: white;
 }
 
@@ -102,15 +131,35 @@
 }
 
 .additional-info {
-  margin: 67px auto 0 auto;
+  position: relative;
   max-width: 600px;
+  height: 200px;
 }
 
 .additional-info__text {
+  margin-bottom: 44px;
   font-family: "Roboto", sans-serif;
-  line-height: 30px;
-  text-align: justify;
-  font-size: 16px;
+  line-height: 38px;
+  font-size: 22px;
   color: white;
+}
+
+.additional-info__more {
+  border: 4px solid transparent;
+  padding: 15px 15px 15px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.additional-info__more:hover {
+  border: 4px solid white;
+  cursor: pointer;
+  padding: 15px 15px;
 }
 /*# sourceMappingURL=style.css.map */
