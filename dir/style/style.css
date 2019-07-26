@@ -1,24 +1,25 @@
-.flex-header, .flex-toolbar {
+.flex-header, .flex-toolbar, .additional-info {
   max-width: 1600px;
   margin: 0 auto;
 }
 
 .header {
-  position: relative;
   background-image: url(../images/logo-back.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .flex-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 0;
+  padding: 150px 0;
 }
 
 .flex-header-item h1 {
@@ -29,7 +30,7 @@
 }
 
 .flex-header-item a img {
-  width: 60px;
+  width: 100px;
 }
 
 .toolbar {
@@ -102,7 +103,6 @@
 }
 
 .additional-info {
-  margin: 67px auto 0 auto;
   max-width: 600px;
 }
 
