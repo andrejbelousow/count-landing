@@ -1,4 +1,4 @@
-.flex-wrap, .flex-toolbar {
+.flex-wrap, .toolbar .flex-toolbar {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -12,6 +12,15 @@
 }
 
 .flex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-wrap .flex-header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,11 +40,12 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 924px;
+  width: 500px;
   padding: 50px 0 25px 0;
 }
 
 .flex-header-logo {
+  margin-top: 8px;
   margin-right: 65px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -43,7 +53,7 @@
 }
 
 .flex-header-logo a img {
-  width: 60px;
+  width: 80px;
 }
 
 .flex-header-title h1 {
@@ -66,7 +76,7 @@
   opacity: 1;
 }
 
-.flex-toolbar {
+.toolbar .flex-toolbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +89,7 @@
   opacity: 1;
 }
 
-.flex-toolbar-item {
+.toolbar .flex-toolbar-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +99,7 @@
   margin-left: 15px;
 }
 
-.flex-toolbar-number a, .flex-toolbar-email a {
+.toolbar .flex-toolbar-number a, .toolbar .flex-toolbar-email a {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: white;
@@ -98,24 +108,24 @@
   text-decoration: none;
 }
 
-.flex-toolbar-number a:hover, .flex-toolbar-email a:hover {
+.toolbar .flex-toolbar-number a:hover, .toolbar .flex-toolbar-email a:hover {
   text-decoration: underline;
   cursor: pointer;
   color: white;
 }
 
-.flex-toolbar-number a:visited, .flex-toolbar-email a:visited {
+.toolbar .flex-toolbar-number a:visited, .toolbar .flex-toolbar-email a:visited {
   color: white;
 }
 
-.flex-toolbar-questions p {
+.toolbar .flex-toolbar-questions p {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #ababab;
   font-weight: 700;
 }
 
-.flex-toolbar-number div {
+.toolbar .flex-toolbar-number div {
   display: block;
   background-image: url(../images/svg/phone.svg);
   width: 20px;
@@ -123,7 +133,7 @@
   margin-right: 8px;
 }
 
-.flex-toolbar-email div {
+.toolbar .flex-toolbar-email div {
   background-image: url(../images/svg/email.svg);
   width: 20px;
   height: 20px;

@@ -21,22 +21,28 @@ padding-bottom: 150px;
 .flex-wrap {
     @extend %wrapper;
     display: flex;
+    justify-content: space-between;
+
+    .flex-header-wrap {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    }
 }
 
 .flex-header {
     display: flex;
     justify-content: flex-start;
-    width: 924px;
+    width: 500px;
     padding: 50px 0 25px 0;
 
     &-logo {
+        margin-top: 8px;
         margin-right: 65px;
         align-self: center;
         
         a img {
-            width: 60px;
+            width: 80px;
         }
     }
     
@@ -53,8 +59,6 @@ padding-bottom: 150px;
 
 }
 
-
-
 .toolbar {
     background-color:#111;
     opacity: 0.6;
@@ -64,70 +68,72 @@ padding-bottom: 150px;
     &:hover {
         opacity: 1;
     }
-}
 
-.flex-toolbar {
-    @extend %wrapper;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    opacity: 1;
-        &-item {
-            display: flex;
-            align-items: center;
-            margin-left: 15px;
-        }
-
-        &-number a, &-email a {
-            font-family: $roboto;
-            font-size: 14px;
-            color: $white;
-            font-weight: $bold-weight;
-            letter-spacing: 1px;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-                cursor: pointer;
-                color: $white;
+    .flex-toolbar {
+        @extend %wrapper;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        opacity: 1;
+            &-item {
+                display: flex;
+                align-items: center;
+                margin-left: 15px;
             }
-
-            &:visited {
-                color: $white;
-            }
-
-        }
-
-        &-questions {
-            
-            p {
+    
+            &-number a, &-email a {
                 font-family: $roboto;
                 font-size: 14px;
-                color: #ababab;
+                color: $white;
                 font-weight: $bold-weight;
-            }            
-        }
-
-        &-number {
-            div {
-                display: block;
-                background-image: url(../images/svg/phone.svg);
-                width: 20px;
-                height: 20px;
-                margin-right: 8px;
+                letter-spacing: 1px;
+                text-decoration: none;
+    
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: $white;
+                }
+    
+                &:visited {
+                    color: $white;
+                }
+    
             }
-        }
-
-        &-email {
-            div {
-                background-image: url(../images/svg/email.svg);
-                width: 20px;
-                height: 20px;
-                margin-right: 8px;
+    
+            &-questions {
+                
+                p {
+                    font-family: $roboto;
+                    font-size: 14px;
+                    color: #ababab;
+                    font-weight: $bold-weight;
+                }            
             }
-        }
-        
+    
+            &-number {
+                div {
+                    display: block;
+                    background-image: url(../images/svg/phone.svg);
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 8px;
+                }
+            }
+    
+            &-email {
+                div {
+                    background-image: url(../images/svg/email.svg);
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 8px;
+                }
+            }
+            
+    }
 }
+
+
 
 .additional-info {
     position: relative;
@@ -160,3 +166,4 @@ padding-bottom: 150px;
         }
     }
 }
+
