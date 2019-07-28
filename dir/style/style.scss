@@ -24,7 +24,7 @@ $gray: #ababab;
 
 .header {
 position: relative;
-background-image: url(../images/logo-back.jpg);
+background-image: url(../images/header-back.jpg);
 background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
@@ -194,5 +194,56 @@ padding-bottom: 150px;
 
     &__timer {
         padding: 27px 95px;
+    }
+}
+
+@import 'random';
+
+// RANDOMAIZER
+
+.random {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/random-back2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 410px 0;
+    box-shadow: 0 0 0 488px rgba(0, 0, 0, 0.45) inset;
+
+    &-content {
+        &-title {
+            font-family: $roboto;
+            font-weight: $bold-weight;
+            font-size: 64px;
+            color: $white;
+            text-align: center;
+            letter-spacing: 2.5px;
+        }
+
+        &-form {
+            display: flex;
+            justify-content: space-around;
+
+            &__from,  &__to{
+                position: relative;
+                
+                input {
+                    padding: 35px 30px;
+                    text-align: center;
+                    font-weight: $bold-weight;
+                    font-size: 65px;
+                }
+            }
+
+            &__from::before {
+                content: 'До';
+                position: absolute;
+                top: 0;
+                left: -28px;
+                font-size: 54px;
+            }
+        }
     }
 }

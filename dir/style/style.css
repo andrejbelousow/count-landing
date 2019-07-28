@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .flex-wrap, .toolbar .flex-toolbar {
   max-width: 1600px;
   margin: 0 auto;
@@ -18,7 +19,7 @@
 
 .header {
   position: relative;
-  background-image: url(../images/logo-back.jpg);
+  background-image: url(../images/header-back.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -202,5 +203,58 @@
 
 .nav-buttons__timer {
   padding: 27px 95px;
+}
+
+.random {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/random-back2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 410px 0;
+  -webkit-box-shadow: 0 0 0 488px rgba(0, 0, 0, 0.45) inset;
+          box-shadow: 0 0 0 488px rgba(0, 0, 0, 0.45) inset;
+}
+
+.random-content-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: white;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+.random-content-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.random-content-form__from, .random-content-form__to {
+  position: relative;
+}
+
+.random-content-form__from input, .random-content-form__to input {
+  padding: 35px 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 65px;
+}
+
+.random-content-form__from::before {
+  content: 'До';
+  position: absolute;
+  top: 0;
+  left: -28px;
+  font-size: 54px;
 }
 /*# sourceMappingURL=style.css.map */
