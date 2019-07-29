@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .flex-wrap, .toolbar .flex-toolbar {
   max-width: 1600px;
   margin: 0 auto;
@@ -216,7 +217,7 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  padding: 200px 0 435px 0;
+  padding: 350px 0 350px 0;
   -webkit-box-shadow: 0 0 0 720px rgba(0, 0, 0, 0.45) inset;
           box-shadow: 0 0 0 720px rgba(0, 0, 0, 0.45) inset;
 }
@@ -307,5 +308,149 @@
 
 .random-content-form__from {
   margin-right: 45px;
+}
+
+.timer {
+  background-image: url(../images/random-back2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 350px 0 350px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timer-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  color: #383e42;
+}
+
+.timer-start {
+  border: 4px solid rgba(56, 62, 66, 0.65);
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+  color: rgba(56, 62, 66, 0.65);
+  padding: 35px 35px;
+  margin: 80px 0 125px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.timer-start:hover {
+  color: #383e42;
+  border: 4px solid #383e42;
+  cursor: pointer;
+}
+
+.timer-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 624px;
+}
+
+.timer-result .hours, .timer-result .minutes, .timer-result .seconds {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  text-align: center;
+  width: 178px;
+}
+
+.timer-result .seconds {
+  margin-right: 0;
+}
+
+.timer-result .hours::after {
+  display: block;
+  content: "Часов";
+  font-size: 40px;
+}
+
+.timer-result .minutes::after {
+  display: block;
+  content: "Минут";
+  font-size: 40px;
+}
+
+.timer-result .seconds::after {
+  display: block;
+  content: "Секунд";
+  font-size: 40px;
+}
+
+.timer-setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 65px 0;
+}
+
+.timer-setting label {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #383e42;
+}
+
+.timer-setting .hours-setter, .timer-setting .minutes-setter, .timer-setting .seconds-setter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 45px;
+}
+
+.timer-setting .hours-setter {
+  margin-left: 0;
+}
+
+.timer-setting .timer-setting__hours, .timer-setting .timer-setting__minutes, .timer-setting .timer-setting__seconds {
+  border: 4px solid transparent;
+  background-color: rgba(250, 235, 215, 0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 35px 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  max-width: 100px;
+  text-align: center;
+  color: #383e42;
+}
+
+.timer-setting .timer-setting__hours:focus, .timer-setting .timer-setting__minutes:focus, .timer-setting .timer-setting__seconds:focus {
+  border: 4px solid #d5d5d5;
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
