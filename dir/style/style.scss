@@ -38,12 +38,13 @@ padding-bottom: 150px;
     @extend %wrapper;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap
+    // align-items: center;
 
     .flex-header-wrap {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    // flex-direction: column;
+    justify-content: space-around;
     }
 }
 
@@ -174,7 +175,9 @@ padding-bottom: 150px;
 }
 
 .nav-buttons {
-    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
 
     &__rand, &__timer {
