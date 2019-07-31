@@ -48,8 +48,8 @@
                 </div>
             </div>
             <div class="nav-buttons">
-                <button class="nav-buttons__rand">Рандомайзер</button>
-                <button class="nav-buttons__timer">Таймер</button>
+                <a href="#random-title" class="nav-buttons__rand">Рандомайзер</a>
+                <a href="#timer-title" class="nav-buttons__timer">Таймер</a>
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@
 
     <div class="random">
         <div class="random-content">
-            <h2 class="random-content-title">Введите диапазон</h2>
+            <h2 id="random-title" class="random-content-title">Введите диапазон</h2>
             <form class="random-content-form">
                 <div class="random-content-form__from">
                     <label for="for">От</label>
@@ -76,7 +76,7 @@
     <!-- Таймер -->
     
     <div class="timer">
-        <h2 class="timer-title">Введите значения для таймера</h2>
+        <h2 id="timer-title" class="timer-title">Введите значения для таймера</h2>
         <div class="timer-setting">
             <div class="hours-setter">
                 <label for="hours">Часы</label>
@@ -98,5 +98,6 @@
             <span class="seconds">0</span>
         </div>
     </div>
+<script src="dir/script/smooth-anchor.js"></script>
 </body>
 </html>
