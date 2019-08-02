@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.flex-wrap, .toolbar .flex-toolbar {
+.flex-wrap, .toolbar .flex-toolbar, .nav-buttons {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -24,17 +24,22 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  -webkit-box-shadow: 0 0 0 353px rgba(0, 0, 0, 0.45) inset;
-          box-shadow: 0 0 0 353px rgba(0, 0, 0, 0.45) inset;
+  -webkit-box-shadow: 0 0 0 524px rgba(0, 0, 0, 0.45) inset;
+          box-shadow: 0 0 0 524px rgba(0, 0, 0, 0.45) inset;
   padding-bottom: 150px;
 }
 
-.flex-wrap .flex-header-wrap {
+.flex-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0;
 }
 
 .flex-header {
@@ -144,17 +149,23 @@
 }
 
 .additional-info {
-  max-width: 600px;
-  height: 200px;
+  max-width: 660px;
 }
 
 .additional-info__text {
-  margin-bottom: 44px;
   font-family: "Roboto", sans-serif;
   line-height: 38px;
   font-weight: 300;
   font-size: 22px;
   color: white;
+}
+
+.additional-info__text span {
+  font-weight: 400;
+}
+
+.additional-info__text:nth-child(2) {
+  margin-bottom: 44px;
 }
 
 .additional-info__more:hover {
@@ -167,20 +178,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 180px;
 }
 
 .nav-buttons__rand, .nav-buttons__timer {
   display: block;
   border: 4px solid rgba(255, 255, 255, 0.65);
   padding: 27px 37px;
-  margin-bottom: 40px;
   font-size: 40px;
   color: rgba(255, 255, 255, 0.65);
 }
