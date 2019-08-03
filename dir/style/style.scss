@@ -50,12 +50,12 @@ padding-bottom: 150px;
     padding: 50px 0 25px 0;
 
     &-logo {
-        margin-top: 8px;
+        margin-top: 6px;
         margin-right: 65px;
         align-self: center;
         
         a img {
-            width: 80px;
+            width: 85px;
         }
     }
     
@@ -144,12 +144,13 @@ padding-bottom: 150px;
 }
 
 
-
 .additional-info {
-    max-width: 660px;
+    width: 660px;
 
     &__text {
+        opacity: 0;
         font-family: $roboto;
+        transition: 1s;
         line-height: 38px;
         font-weight: $light-weight;
         font-size: 22px;
@@ -164,13 +165,18 @@ padding-bottom: 150px;
         margin-bottom: 44px;
     } 
 
-    &__more {
-        @extend %header-buttons;
-
-        &:hover {
-            border: 4px solid $white;
-            cursor: pointer;
-            padding: 15px 15px;
+    &-buttom {
+        transition: 1s;
+        opacity: 0;
+        
+        &__more {
+            @extend %header-buttons;
+    
+            &:hover {
+                border: 4px solid $white;
+                cursor: pointer;
+                padding: 15px 15px;
+            }
         }
     }
 }
