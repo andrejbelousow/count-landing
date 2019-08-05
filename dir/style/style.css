@@ -309,9 +309,13 @@
   margin-left: 20px;
 }
 
-.random-content-form__from input:focus, .random-content-form__to input:focus {
+.random-content-form__from .focus, .random-content-form__to .focus {
   background-color: transparent;
   border: 4px solid white;
+}
+
+.random-content-form__from .inc-focus, .random-content-form__to .inc-focus {
+  border: 4px solid rgba(229, 43, 80, 0.5);
 }
 
 .random-content-form__from {

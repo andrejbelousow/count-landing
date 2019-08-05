@@ -38,4 +38,56 @@ const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
         });
       });
 
-    
+// Сброс инпутов и проверка на числовые значения
+
+let inputs = document.querySelectorAll("input"),
+    inputsArray = Array.from(inputs),
+    randomInputs = inputsArray.slice(0, 2),
+    timerInputs = inputsArray.slice(3, 6),
+    buttons = document.querySelectorAll("button");
+
+    randomInputs.forEach(function(item) {
+      item.value = '';
+      item.onfocus = function() {
+        item.classList.add("focus");
+      };
+      item.onblur = function() {
+        item.classList.remove("focus");
+      };
+      item.addEventListener("input", function() {
+        console.log(typeof(item.value));
+        a = parseInt(item.value, 10);
+        console.log(typeof(a));
+        if ( isNaN(a) && item.value != '') {
+            buttons[0].disabled = "true";
+            item.classList.add("inc-focus");
+            item.onfocus = function() {
+              item.classList.add("focus");
+            };
+            item.onblur = function() {
+              item.classList.add("inc-focus");
+            };
+        } else if(item.value == '') {
+            item.classList.toggle("inc-focus");
+            item.onfocus = function() {
+              item.classList.add("focus");
+            };
+            item.onblur = function() {
+              item.classList.remove("focus");
+            };
+        } else {
+          item.classList.add("focus");
+            item.onfocus = function() {
+              item.classList.add("focus");
+            };
+            item.onblur = function() {
+              item.classList.remove("focus");
+            };
+            buttons[0].disabled = "false";
+        }
+      }); 
+    });
+
+    buttons[0].addEventListener("click", function() {
+        console.log("кнопка работает");
+    });
