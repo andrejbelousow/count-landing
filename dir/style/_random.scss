@@ -1,7 +1,7 @@
 .random {
     display: flex;
     justify-content: center;
-    background-image: url(../images/random-back2.png);
+    background-image: url(../images/telephone.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -25,7 +25,7 @@
 
         &-count {
             @extend %header-buttons;
-            margin-top: 80px;
+            margin-top: 65px;
             padding: 40px 40px;
             border: 4px solid rgba(255, 255, 255, 0.65);
             font-size: 50px;
@@ -41,6 +41,7 @@
         &-form {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             &__from,  &__to{
                 display: flex;
@@ -57,37 +58,41 @@
                 input {
                     padding: 35px 30px;
                     border: 4px solid transparent;
-                    background-color: rgba(255, 255, 255, 0.4);
+                    background-color: rgba(145, 145, 146, 0.3);
                     text-align: center;
                     font-family: $roboto;
                     font-weight: $bold-weight;
                     font-size: 65px;
-                    color: $atracit;
+                    color: $white;
                     transition: 0.2s;
                     max-width: 220px;
                     margin-left: 20px;
-
-                    // &:focus {
-                    //     background-color: transparent;
-                    //     border: 4px solid $white;
-                    // }
                 }
 
                 .focus {
-                    background-color: transparent;
-                    border: 4px solid $white;
+                    @extend %focus;
                 }
 
                 .inc-focus {
-                    border: 4px solid rgba(229, 43, 80, 0.5);
+                    @extend %inc-focus;
+                }
+
+                .inc-blur {
+                    @extend %inc-blur;
                 }
             }
+
+
 
             &__from {
                 margin-right: 45px;
             }
 
         }
+
+            .warning {
+                @extend %warning;
+            }
     }
 
 
