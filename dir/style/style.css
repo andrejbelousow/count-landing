@@ -284,10 +284,9 @@
 }
 
 .random-content-count {
-  margin-top: 65px;
-  padding: 40px 40px;
+  padding: 30px 30px;
   border: 4px solid rgba(255, 255, 255, 0.65);
-  font-size: 50px;
+  font-size: 45px;
   color: rgba(255, 255, 255, 0.65);
 }
 
@@ -353,7 +352,7 @@
   background-attachment: fixed;
   -webkit-box-shadow: 0 0 0 720px rgba(0, 0, 0, 0.45) inset;
           box-shadow: 0 0 0 720px rgba(0, 0, 0, 0.45) inset;
-  padding: 250px 0 250px 0;
+  padding: 200px 0 200px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,10 +379,10 @@
   background-color: transparent;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 45px;
   text-align: center;
   color: rgba(255, 255, 255, 0.65);
-  padding: 35px 35px;
+  padding: 30px 30px;
   margin-bottom: 50px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -419,6 +418,10 @@
   margin-right: 0;
 }
 
+.timer-result .gone {
+  color: #e52b50;
+}
+
 .timer-result .hours::after {
   display: block;
   content: "Часов";
@@ -444,7 +447,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 65px 0;
 }
 
 .timer-setting label {

@@ -25,10 +25,10 @@
 
         &-count {
             @extend %header-buttons;
-            margin-top: 65px;
-            padding: 40px 40px;
+            // margin-top: 65px;
+            padding: 30px 30px;
             border: 4px solid rgba(255, 255, 255, 0.65);
-            font-size: 50px;
+            font-size: 45px;
             color: rgba(255, 255, 255, 0.65);
 
             &:hover {
