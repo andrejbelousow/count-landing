@@ -8,6 +8,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+        @media screen and (max-width: $m86) {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        @media screen and (max-width: $m72) {
+            padding: 175px 20px 175px 20px;
+        }
+        
 
     &-title {
         font-family: $roboto;
@@ -16,6 +24,15 @@
         text-align: center;
         letter-spacing: 2.5px;
         color: $white;
+            @media screen and (max-width: $m12) {
+                font-size: 60px;
+            }
+            @media screen and (max-width: $m86) {
+                font-size: 55px;
+            }
+            @media screen and (max-width: $m72) {
+                font-size: 50px;
+            }
     }
 
     &-start {
@@ -29,6 +46,16 @@
         padding: 30px 30px;
         margin-bottom: 50px;
         transition: 0.3s;
+            @media screen and (max-width: $m12) {
+                font-size: 35px;
+            }
+            @media screen and (max-width: $m86) {
+                font-size: 32px;
+            }
+            @media screen and (max-width: $m72) {
+                font-size: 28px;
+                padding: 27px 30px;
+            }
 
         &:hover {
             color: rgba(255, 255, 255, 1);
@@ -41,6 +68,9 @@
         display: flex;
         justify-content: space-between;
         width: 624px;
+            @media screen and (max-width: $m68) {
+                width: 526px;
+            }
 
         .hours, .minutes, .seconds {
             display: block;
@@ -50,6 +80,15 @@
             text-align: center;
             width: 178px;
             color: $white;
+                @media screen and (max-width: $m12) {
+                    font-size: 70px;
+                }
+                @media screen and (max-width: $m72) {
+                    font-size: 60px;
+                }
+                @media screen and (max-width: $m68) {
+                    width: 158px;
+                }
         }
 
         .seconds {
@@ -64,18 +103,36 @@
             display: block;
             content: "Часов";
             font-size: 40px;
+                @media screen and (max-width: $m12) {
+                    font-size: 35px;
+                }
+                @media screen and (max-width: $m72) {
+                    font-size: 30px;
+                }
         }
 
         .minutes::after {
             display: block;
             content: "Минут";
             font-size: 40px;
+                @media screen and (max-width: $m12) {
+                    font-size: 35px;
+                }
+                @media screen and (max-width: $m72) {
+                    font-size: 30px;
+                }
         }
 
         .seconds::after {
             display: block;
             content: "Секунд";
             font-size: 40px;
+                @media screen and (max-width: $m12) {
+                    font-size: 35px;
+                }
+                @media screen and (max-width: $m72) {
+                    font-size: 30px;
+                }
         }
     }
 
@@ -90,6 +147,12 @@
             font-size: 40px;
             margin-bottom: 15px;
             color: $white;
+                @media screen and (max-width: $m12) {
+                    font-size: 30px;
+                }
+                @media screen and (max-width: $m72) {
+                    font-size: 28px;
+                }
             }
 
             .hours-setter, .minutes-setter, .seconds-setter {
@@ -97,6 +160,9 @@
                 flex-direction: column;
                 align-items: center; 
                 margin-left: 45px;
+                    @media screen and (max-width: $m68) {
+                        margin-left: 26px;
+                    }
             }
 
             .hours-setter {
@@ -114,6 +180,15 @@
                 max-width: 100px;
                 text-align: center;
                 color: $white;
+                    @media screen and (max-width: $m12) {
+                        font-size: 35px;
+                    }
+                    @media screen and (max-width: $m72) {
+                        font-size: 30px;
+                    }
+                    @media screen and (max-width: $m68) {
+                        max-width: 80px;
+                    }
             }
     }
 

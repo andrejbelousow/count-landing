@@ -13,6 +13,24 @@
   font-size: 32px;
 }
 
+@media screen and (max-width: 1200px) {
+  .random-content .warning, .warning {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .random-content .warning, .warning {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .random-content .warning, .warning {
+    font-size: 22px;
+  }
+}
+
 .random-content-form__from .focus, .random-content-form__to .focus {
   background-color: transparent;
   border: 4px solid white;
@@ -53,6 +71,19 @@
   padding-bottom: 150px;
 }
 
+@media screen and (max-width: 1070px) {
+  .header {
+    -webkit-box-shadow: 0 0 0 535px rgba(0, 0, 0, 0.45) inset;
+            box-shadow: 0 0 0 535px rgba(0, 0, 0, 0.45) inset;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .header {
+    padding-bottom: 120px;
+  }
+}
+
 .flex-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,6 +95,34 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 100px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1070px) {
+  .flex-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .flex-wrap {
+    padding: 70px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .flex-wrap {
+    padding: 55px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .flex-header {
@@ -77,6 +136,12 @@
   padding: 50px 0 25px 0;
 }
 
+@media screen and (max-width: 1070px) {
+  .flex-header {
+    padding: 25px 0 25px 0;
+  }
+}
+
 .flex-header-logo {
   margin-top: 6px;
   margin-right: 65px;
@@ -85,25 +150,87 @@
       align-self: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .flex-header-logo {
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .flex-header-logo {
+    margin-right: 35px;
+  }
+}
+
 .flex-header-logo a img {
   width: 85px;
 }
 
+@media screen and (max-width: 1200px) {
+  .flex-header-logo a img {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .flex-header-logo a img {
+    width: 85px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .flex-header-logo a img {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .flex-header-logo a img {
+    width: 55px;
+  }
+}
+
 .flex-header-title h1 {
-  width: 400px;
+  max-width: 400px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 5.5px;
   font-size: 45px;
   color: white;
 }
 
+@media screen and (max-width: 1200px) {
+  .flex-header-title h1 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .flex-header-title h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .flex-header-title h1 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .flex-header-title h1 {
+    font-size: 32px;
+    max-width: 356px;
+  }
+}
+
 .toolbar {
-  position: static;
   background-color: transparent;
   padding: 10px 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  z-index: 0;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .toolbar:hover {
@@ -141,6 +268,12 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 582px) {
+  .toolbar .flex-toolbar-number a, .toolbar .flex-toolbar-email a {
+    font-size: 12px;
+  }
+}
+
 .toolbar .flex-toolbar-number a:hover, .toolbar .flex-toolbar-email a:hover {
   cursor: pointer;
   color: white;
@@ -173,7 +306,7 @@
 }
 
 .additional-info {
-  width: 660px;
+  max-width: 660px;
 }
 
 .additional-info__text {
@@ -185,6 +318,24 @@
   font-weight: 300;
   font-size: 22px;
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .additional-info__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .additional-info__text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .additional-info__text {
+    font-size: 18px;
+  }
 }
 
 .additional-info__text span {
@@ -199,6 +350,24 @@
   -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .additional-info-buttom__more {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .additional-info-buttom__more {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .additional-info-buttom__more {
+    font-size: 18px;
+  }
 }
 
 .additional-info-buttom__more:hover {
@@ -219,12 +388,54 @@
   height: 180px;
 }
 
+@media screen and (max-width: 1070px) {
+  .nav-buttons {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .nav-buttons {
+    height: 186px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .nav-buttons__rand, .nav-buttons__timer {
   display: block;
   border: 4px solid rgba(255, 255, 255, 0.65);
   padding: 27px 37px;
   font-size: 40px;
   color: rgba(255, 255, 255, 0.65);
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-buttons__rand, .nav-buttons__timer {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .nav-buttons__rand, .nav-buttons__timer {
+    font-size: 26px;
+    padding: 22px 35px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .nav-buttons__rand, .nav-buttons__timer {
+    font-size: 20px;
+    padding: 22px 28px;
+  }
 }
 
 .nav-buttons__rand:hover, .nav-buttons__timer:hover {
@@ -237,11 +448,35 @@
   padding: 27px 95px;
 }
 
+@media screen and (max-width: 860px) {
+  .nav-buttons__timer {
+    padding: 22px 57px;
+  }
+}
+
 .separator {
   background-image: url(../images/separator.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100px;
+}
+
+@media screen and (max-width: 860px) {
+  .separator {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .separator {
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .separator {
+    height: 40px;
+  }
 }
 
 .random {
@@ -259,6 +494,36 @@
   padding: 230px 0 230px 0;
   -webkit-box-shadow: 0 0 0 720px rgba(0, 0, 0, 0.45) inset;
           box-shadow: 0 0 0 720px rgba(0, 0, 0, 0.45) inset;
+}
+
+@media screen and (max-width: 1200px) {
+  .random {
+    padding: 200px 0 200px 0;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .random {
+    padding: 185px 20px 185px 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .random {
+    padding: 160px 20px 160px 20px;
+  }
+}
+
+@media screen and (max-width: 703px) {
+  .random {
+    padding: 160px 50px 160px 50px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .random {
+    padding: 135px 50px 135px 50px;
+  }
 }
 
 .random-content {
@@ -283,11 +548,61 @@
   letter-spacing: 2.5px;
 }
 
+@media screen and (max-width: 1200px) {
+  .random-content-title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .random-content-title {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .random-content-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .random-content-title {
+    font-size: 40px;
+  }
+}
+
 .random-content-count {
   padding: 30px 30px;
   border: 4px solid rgba(255, 255, 255, 0.65);
   font-size: 45px;
   color: rgba(255, 255, 255, 0.65);
+}
+
+@media screen and (max-width: 1200px) {
+  .random-content-count {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .random-content-count {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .random-content-count {
+    font-size: 28px;
+    padding: 27px 30px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .random-content-count {
+    font-size: 24px;
+    padding: 20px 20px;
+  }
 }
 
 .random-content-count:hover {
@@ -305,6 +620,14 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 703px) {
+  .random-content-form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .random-content-form__from, .random-content-form__to {
@@ -326,6 +649,30 @@
   color: white;
 }
 
+@media screen and (max-width: 1200px) {
+  .random-content-form__from label, .random-content-form__to label {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .random-content-form__from label, .random-content-form__to label {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .random-content-form__from label, .random-content-form__to label {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .random-content-form__from label, .random-content-form__to label {
+    font-size: 35px;
+  }
+}
+
 .random-content-form__from input, .random-content-form__to input {
   padding: 35px 30px;
   border: 4px solid transparent;
@@ -341,12 +688,56 @@
   margin-left: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  .random-content-form__from input, .random-content-form__to input {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .random-content-form__from input, .random-content-form__to input {
+    font-size: 55px;
+    padding: 30px 0px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .random-content-form__from input, .random-content-form__to input {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .random-content-form__from input, .random-content-form__to input {
+    font-size: 35px;
+  }
+}
+
 .random-content-form__from {
   margin-right: 45px;
 }
 
+@media screen and (max-width: 720px) {
+  .random-content-form__from {
+    margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 703px) {
+  .random-content-form__from {
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+}
+
 .random-content .random-result-block {
-  height: 255px;
+  height: 235px;
+}
+
+@media screen and (max-width: 582px) {
+  .random-content .random-result-block {
+    height: 198px;
+  }
 }
 
 .random-content .random-result-block .random-result {
@@ -356,6 +747,30 @@
   font-size: 130px;
   color: white;
   margin-top: 105px;
+}
+
+@media screen and (max-width: 1200px) {
+  .random-content .random-result-block .random-result {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .random-content .random-result-block .random-result {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .random-content .random-result-block .random-result {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .random-content .random-result-block .random-result {
+    font-size: 80px;
+  }
 }
 
 .timer {
@@ -378,6 +793,19 @@
           align-items: center;
 }
 
+@media screen and (max-width: 860px) {
+  .timer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .timer {
+    padding: 175px 20px 175px 20px;
+  }
+}
+
 .timer-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -385,6 +813,24 @@
   text-align: center;
   letter-spacing: 2.5px;
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .timer-title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .timer-title {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .timer-title {
+    font-size: 50px;
+  }
 }
 
 .timer-start {
@@ -399,6 +845,25 @@
   margin-bottom: 50px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  .timer-start {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .timer-start {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .timer-start {
+    font-size: 28px;
+    padding: 27px 30px;
+  }
 }
 
 .timer-start:hover {
@@ -417,6 +882,12 @@
   width: 624px;
 }
 
+@media screen and (max-width: 680px) {
+  .timer-result {
+    width: 526px;
+  }
+}
+
 .timer-result .hours, .timer-result .minutes, .timer-result .seconds {
   display: block;
   font-family: "Roboto", sans-serif;
@@ -425,6 +896,24 @@
   text-align: center;
   width: 178px;
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .timer-result .hours, .timer-result .minutes, .timer-result .seconds {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .timer-result .hours, .timer-result .minutes, .timer-result .seconds {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .timer-result .hours, .timer-result .minutes, .timer-result .seconds {
+    width: 158px;
+  }
 }
 
 .timer-result .seconds {
@@ -441,16 +930,52 @@
   font-size: 40px;
 }
 
+@media screen and (max-width: 1200px) {
+  .timer-result .hours::after {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .timer-result .hours::after {
+    font-size: 30px;
+  }
+}
+
 .timer-result .minutes::after {
   display: block;
   content: "Минут";
   font-size: 40px;
 }
 
+@media screen and (max-width: 1200px) {
+  .timer-result .minutes::after {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .timer-result .minutes::after {
+    font-size: 30px;
+  }
+}
+
 .timer-result .seconds::after {
   display: block;
   content: "Секунд";
   font-size: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .timer-result .seconds::after {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .timer-result .seconds::after {
+    font-size: 30px;
+  }
 }
 
 .timer-setting {
@@ -471,6 +996,18 @@
   color: white;
 }
 
+@media screen and (max-width: 1200px) {
+  .timer-setting label {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .timer-setting label {
+    font-size: 28px;
+  }
+}
+
 .timer-setting .hours-setter, .timer-setting .minutes-setter, .timer-setting .seconds-setter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,6 +1020,12 @@
       -ms-flex-align: center;
           align-items: center;
   margin-left: 45px;
+}
+
+@media screen and (max-width: 680px) {
+  .timer-setting .hours-setter, .timer-setting .minutes-setter, .timer-setting .seconds-setter {
+    margin-left: 26px;
+  }
 }
 
 .timer-setting .hours-setter {
@@ -501,6 +1044,24 @@
   max-width: 100px;
   text-align: center;
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .timer-setting .timer-setting__hours, .timer-setting .timer-setting__minutes, .timer-setting .timer-setting__seconds {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .timer-setting .timer-setting__hours, .timer-setting .timer-setting__minutes, .timer-setting .timer-setting__seconds {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .timer-setting .timer-setting__hours, .timer-setting .timer-setting__minutes, .timer-setting .timer-setting__seconds {
+    max-width: 80px;
+  }
 }
 
 .timer .focus {

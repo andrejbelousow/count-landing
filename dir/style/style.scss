@@ -6,6 +6,13 @@ $bold-weight: 700;
 $gray: #ababab;
 $atracit: rgba(56, 62, 66, 1);
 $red: 4px solid rgba(229, 43, 80, 0.5);
+$m12: 1200px;
+$m10: 1070px;
+$m86: 860px;
+$m72: 720px;
+$m70: 703px;
+$m68: 680px;
+$m58: 582px;
 
 %wrapper {
     max-width: 1600px;
@@ -19,6 +26,15 @@ $red: 4px solid rgba(229, 43, 80, 0.5);
         font-weight: $bold-weight;
         color: rgba(229, 43, 80, 1);
         font-size: 32px;
+            @media screen and (max-width: $m12) {
+                font-size: 30px;
+            }
+            @media screen and (max-width: $m72) {
+                font-size: 26px;
+            }
+            @media screen and (max-width: $m58) {
+                font-size: 22px;
+            }
 }
 
 %focus {
@@ -57,6 +73,12 @@ background-attachment: fixed;
 background-size: cover;
 box-shadow:0 0 0 524px rgba(0, 0, 0, 0.45) inset;
 padding-bottom: 150px;
+    @media screen and (max-width: $m10) {
+        box-shadow:0 0 0 535px rgba(0, 0, 0, 0.45) inset;
+    }
+    @media screen and (max-width: $m86) {
+        padding-bottom: 120px;
+    }
 }
 
 .flex-wrap {
@@ -65,7 +87,22 @@ padding-bottom: 150px;
     justify-content: space-between;
     align-items: center;
     padding: 100px 0;
-
+    padding-left: 20px;
+    padding-right: 20px;
+        @media screen and (max-width: $m10) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media screen and (max-width: $m86) {
+            padding: 70px 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media screen and (max-width: $m58) {
+            padding: 55px 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 }
 
 .flex-header {
@@ -73,35 +110,72 @@ padding-bottom: 150px;
     justify-content: flex-start;
     width: 500px;
     padding: 50px 0 25px 0;
+        @media screen and (max-width: $m10) {
+            padding: 25px 0 25px 0;
+        }
 
     &-logo {
         margin-top: 6px;
         margin-right: 65px;
         align-self: center;
+            @media screen and (max-width: $m12) {
+                margin-right: 45px;
+            }
+            @media screen and (max-width: $m58) {
+                margin-right: 35px;
+            }
         
         a img {
             width: 85px;
+                @media screen and (max-width: $m12) {
+                    width: 75px;
+                }
+                @media screen and (max-width: $m10) {
+                    width: 85px;
+                }
+                @media screen and (max-width: $m86) {
+                    width: 70px;
+                }
+                @media screen and (max-width: $m58) {
+                    width: 55px;
+                }
+
+                
         }
     }
     
     &-title {
         h1 {
-        width: 400px;
+        max-width: 400px;
         font-family: $roboto;
         letter-spacing: 5.5px;
         font-size: 45px;
         color: $white;
+            @media screen and (max-width: $m12) {
+                font-size: 42px;
+            }
+            @media screen and (max-width: $m10) {
+                font-size: 45px;
+            }
+            @media screen and (max-width: $m86) {
+                font-size: 38px;
+            }
+            @media screen and (max-width: $m58) {
+                font-size: 32px;
+                max-width: 356px;
+            }
         }
         
     }
 }
 
 .toolbar {
-    position: static;
     background-color: transparent;
     padding: 10px 0;
     transition: 0.2s;
-    z-index: 0;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.55);
@@ -125,6 +199,9 @@ padding-bottom: 150px;
                 font-weight: $bold-weight;
                 letter-spacing: 1px;
                 text-decoration: none;
+                    @media screen and (max-width: $m58) {
+                        font-size: 12px;
+                    }
     
                 &:hover {
                     cursor: pointer;
@@ -170,7 +247,7 @@ padding-bottom: 150px;
 
 
 .additional-info {
-    width: 660px;
+    max-width: 660px;
 
     &__text {
         opacity: 0;
@@ -180,6 +257,16 @@ padding-bottom: 150px;
         font-weight: $light-weight;
         font-size: 22px;
         color: $white;
+            @media screen and (max-width: $m12) {
+                font-size: 18px;
+            }
+            @media screen and (max-width: $m10) {
+                font-size: 22px;
+            }
+            @media screen and (max-width: $m86) {
+                font-size: 18px;
+            }
+            
 
         span {
             font-weight: 400;
@@ -196,6 +283,16 @@ padding-bottom: 150px;
         
         &__more {
             @extend %header-buttons;
+                @media screen and (max-width: $m12) {
+                    font-size: 18px;
+                }
+                @media screen and (max-width: $m10) {
+                    font-size: 20px;
+                }
+                @media screen and (max-width: $m86) {
+                    font-size: 18px;
+                }
+                
     
             &:hover {
                 border: 4px solid $white;
@@ -212,6 +309,15 @@ padding-bottom: 150px;
     justify-content: space-around;
     align-items: flex-end;
     height: 180px;
+        @media screen and (max-width: $m10) {
+            height: 100px;
+        }
+        @media screen and (max-width: $m58) {
+            height: 186px;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
 
     &__rand, &__timer {
         @extend %header-buttons;
@@ -219,7 +325,18 @@ padding-bottom: 150px;
         border: 4px solid rgba(255, 255, 255, 0.65);
         padding: 27px 37px;
         font-size: 40px;
-        color: rgba(255, 255, 255, 0.65); 
+        color: rgba(255, 255, 255, 0.65);
+             @media screen and (max-width: $m12) {
+                 font-size: 32px;
+             }
+             @media screen and (max-width: $m86) {
+                 font-size: 26px;
+                 padding: 22px 35px;
+             }
+             @media screen and (max-width: $m86) {
+                 font-size: 20px;
+                 padding: 22px 28px;
+             }
 
         &:hover {
             border: 4px solid rgba(255, 255, 255, 1);
@@ -230,6 +347,9 @@ padding-bottom: 150px;
 
     &__timer {
         padding: 27px 95px;
+            @media screen and (max-width: $m86) {
+                padding: 22px 57px;
+            }
     }
 }
 
@@ -238,6 +358,15 @@ padding-bottom: 150px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100px;
+        @media screen and (max-width: $m86) {
+            height: 70px;
+        }
+        @media screen and (max-width: $m72) {
+            height: 55px;
+        }
+        @media screen and (max-width: $m58) {
+            height: 40px;
+        }
 }
 
 @import 'random';

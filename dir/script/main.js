@@ -71,7 +71,8 @@ function checkInputs() {
         item.classList.remove("focus");
       };
       item.addEventListener("input", function() {
-        if ( isNaN(item) && item.value != '') {
+        let a = parseInt(item.value, 10);
+        if ( isNaN(a) && item.value != '') {
           button.disabled = "true";
             item.classList.add("inc-focus");
             warning.textContent = "Введите числовое значение";

@@ -8,6 +8,21 @@
     background-attachment: fixed;
     padding: 230px 0 230px 0;
     box-shadow: 0 0 0 720px rgba(0, 0, 0, 0.45) inset;
+        @media screen and (max-width: $m12) {
+            padding: 200px 0 200px 0;
+        }
+        @media screen and (max-width: $m86) {
+            padding: 185px 20px 185px 20px;
+        }
+        @media screen and (max-width: $m72) {
+            padding: 160px 20px 160px 20px;
+        }
+        @media screen and (max-width: $m70) {
+            padding: 160px 50px 160px 50px;
+        }
+        @media screen and (max-width: $m58) {
+            padding: 135px 50px 135px 50px;
+        }
 
     &-content {
         display: flex;
@@ -21,6 +36,18 @@
             color: $white;
             text-align: center;
             letter-spacing: 2.5px;
+                @media screen and (max-width: $m12) {
+                    font-size: 60px;
+                }
+                @media screen and (max-width: $m86) {
+                    font-size: 55px;
+                }
+                @media screen and (max-width: $m72) {
+                    font-size: 50px;
+                }
+                @media screen and (max-width: $m58) {
+                    font-size: 40px;
+                }
         }
 
         &-count {
@@ -29,6 +56,20 @@
             border: 4px solid rgba(255, 255, 255, 0.65);
             font-size: 45px;
             color: rgba(255, 255, 255, 0.65);
+                @media screen and (max-width: $m12) {
+                    font-size: 35px;
+                }
+                @media screen and (max-width: $m86) {
+                    font-size: 32px;
+                }
+                @media screen and (max-width: $m72) {
+                    font-size: 28px;
+                    padding: 27px 30px;
+                }
+                @media screen and (max-width: $m58) {
+                    font-size: 24px;
+                    padding: 20px 20px;
+                }
 
             &:hover {
                 color: rgba(255, 255, 255, 1);
@@ -41,6 +82,9 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+                @media screen and (max-width: $m70) {
+                    justify-content: center;
+                }
 
             &__from,  &__to{
                 display: flex;
@@ -52,6 +96,18 @@
                     font-size: 65px;
                     font-weight: $bold-weight;
                     color: $white;
+                        @media screen and (max-width: $m12) {
+                            font-size: 60px;
+                        }
+                        @media screen and (max-width: $m86) {
+                            font-size: 55px;
+                        }
+                        @media screen and (max-width: $m72) {
+                            font-size: 45px;
+                        }
+                        @media screen and (max-width: $m58) {
+                            font-size: 35px;
+                        }
                 }
                 
                 input {
@@ -66,6 +122,19 @@
                     transition: 0.2s;
                     max-width: 220px;
                     margin-left: 20px;
+                        @media screen and (max-width: $m12) {
+                            font-size: 60px;
+                        }
+                        @media screen and (max-width: $m86) {
+                            font-size: 55px;
+                            padding: 30px 0px;
+                        }
+                        @media screen and (max-width: $m72) {
+                            font-size: 45px;
+                        }
+                        @media screen and (max-width: $m58) {
+                            font-size: 35px;
+                        }
                 }
 
                 .focus {
@@ -85,6 +154,13 @@
 
             &__from {
                 margin-right: 45px;
+                    @media screen and (max-width: $m72) {
+                        margin-right: 35px;
+                    }
+                    @media screen and (max-width: $m70) {
+                        margin-right: 0px;
+                        margin-bottom: 25px;
+                    }
             }
 
         }
@@ -94,7 +170,10 @@
         }
         
         .random-result-block {
-            height: 255px;
+            height: 235px;
+                @media screen and (max-width: $m58) {
+                    height: 198px;
+                }
             .random-result {
                 display: none;
                 font-family: $roboto;
@@ -102,6 +181,19 @@
                 font-size: 130px;
                 color: $white;
                 margin-top: 105px;
+                    @media screen and (max-width: $m12) {
+                        font-size: 120px;
+                    }
+                    @media screen and (max-width: $m86) {
+                        font-size: 110px;
+                    }
+                    @media screen and (max-width: $m72) {
+                        font-size: 100px;
+                    }
+                    @media screen and (max-width: $m58) {
+                        font-size: 80px;
+                    }
+                    
             }
         }
 
