@@ -31,6 +31,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .random-content .warning, .warning {
+    font-size: 18px;
+  }
+}
+
 .random-content-form__from .focus, .random-content-form__to .focus {
   background-color: transparent;
   border: 4px solid white;
@@ -216,6 +222,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .flex-header-logo a img {
+    width: 42px;
+  }
+}
+
 .flex-header-title h1 {
   max-width: 400px;
   font-family: "Roboto", sans-serif;
@@ -252,6 +264,13 @@
 @media screen and (max-width: 460px) {
   .flex-header-title h1 {
     font-size: 28px;
+    max-width: 322px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .flex-header-title h1 {
+    font-size: 24px;
     max-width: 322px;
   }
 }
@@ -408,6 +427,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .additional-info__text {
+    font-size: 14px;
+  }
+}
+
 .additional-info__text span {
   font-weight: 400;
 }
@@ -449,6 +474,12 @@
 @media screen and (max-width: 460px) {
   .additional-info-buttom__more {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .additional-info-buttom__more {
+    font-size: 14px;
   }
 }
 
@@ -498,6 +529,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .nav-buttons {
+    height: 150px;
+  }
+}
+
 .nav-buttons__rand, .nav-buttons__timer {
   display: block;
   border: 4px solid rgba(255, 255, 255, 0.65);
@@ -533,6 +570,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .nav-buttons__rand, .nav-buttons__timer {
+    font-size: 16px;
+  }
+}
+
 .nav-buttons__rand:hover, .nav-buttons__timer:hover {
   border: 4px solid white;
   color: white;
@@ -552,6 +595,12 @@
 @media screen and (max-width: 460px) {
   .nav-buttons__timer {
     padding: 18px 57px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nav-buttons__timer {
+    padding: 18px 52px;
   }
 }
 
@@ -639,6 +688,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .random {
+    padding: 95px 50px 95px 50px;
+  }
+}
+
 .random-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -691,6 +746,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .random-content-title {
+    font-size: 28px;
+  }
+}
+
 .random-content-count {
   padding: 30px 30px;
   border: 4px solid rgba(255, 255, 255, 0.65);
@@ -727,6 +788,13 @@
 @media screen and (max-width: 460px) {
   .random-content-count {
     font-size: 18px;
+    padding: 18px 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .random-content-count {
+    font-size: 16px;
     padding: 18px 20px;
   }
 }
@@ -805,6 +873,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .random-content-form__from label, .random-content-form__to label {
+    font-size: 22px;
+  }
+}
+
 .random-content-form__from input, .random-content-form__to input {
   padding: 35px 30px;
   border: 4px solid transparent;
@@ -853,6 +927,13 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .random-content-form__from input, .random-content-form__to input {
+    font-size: 28px;
+    max-width: 70px;
+  }
+}
+
 .random-content-form__from {
   margin-right: 45px;
 }
@@ -877,6 +958,12 @@
 @media screen and (max-width: 582px) {
   .random-content .random-result-block {
     height: 198px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .random-content .random-result-block {
+    height: 168px;
   }
 }
 
@@ -916,6 +1003,12 @@
 @media screen and (max-width: 460px) {
   .random-content .random-result-block .random-result {
     font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .random-content .random-result-block .random-result {
+    font-size: 55px;
   }
 }
 
@@ -1003,6 +1096,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .timer-title {
+    font-size: 28px;
+  }
+}
+
 .timer-start {
   border: 4px solid rgba(255, 255, 255, 0.65);
   background-color: transparent;
@@ -1050,6 +1149,13 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .timer-start {
+    font-size: 16px;
+    padding: 18px 24px;
+  }
+}
+
 .timer-start:hover {
   color: white;
   border: 4px solid white;
@@ -1081,6 +1187,12 @@
 @media screen and (max-width: 460px) {
   .timer-result {
     width: 352px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .timer-result {
+    width: 294px;
   }
 }
 
@@ -1126,6 +1238,20 @@
   }
 }
 
+@media screen and (max-width: 460px) {
+  .timer-result .hours, .timer-result .minutes, .timer-result .seconds {
+    width: 93px;
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .timer-result .hours, .timer-result .minutes, .timer-result .seconds {
+    width: 90px;
+    font-size: 36px;
+  }
+}
+
 .timer-result .seconds {
   margin-right: 0;
 }
@@ -1164,6 +1290,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .timer-result .hours::after {
+    font-size: 18px;
+  }
+}
+
 .timer-result .minutes::after {
   display: block;
   content: "Минут";
@@ -1194,6 +1326,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .timer-result .minutes::after {
+    font-size: 18px;
+  }
+}
+
 .timer-result .seconds::after {
   display: block;
   content: "Секунд";
@@ -1221,6 +1359,12 @@
 @media screen and (max-width: 460px) {
   .timer-result .seconds::after {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .timer-result .seconds::after {
+    font-size: 18px;
   }
 }
 
@@ -1266,6 +1410,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .timer-setting label {
+    font-size: 16px;
+  }
+}
+
 .timer-setting .hours-setter, .timer-setting .minutes-setter, .timer-setting .seconds-setter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1283,6 +1433,12 @@
 @media screen and (max-width: 680px) {
   .timer-setting .hours-setter, .timer-setting .minutes-setter, .timer-setting .seconds-setter {
     margin-left: 26px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .timer-setting .hours-setter, .timer-setting .minutes-setter, .timer-setting .seconds-setter {
+    margin-left: 12px;
   }
 }
 
@@ -1339,6 +1495,14 @@
   .timer-setting .timer-setting__hours, .timer-setting .timer-setting__minutes, .timer-setting .timer-setting__seconds {
     max-width: 34px;
     font-size: 26px;
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .timer-setting .timer-setting__hours, .timer-setting .timer-setting__minutes, .timer-setting .timer-setting__seconds {
+    max-width: 22px;
+    font-size: 18px;
     padding: 20px 30px;
   }
 }
