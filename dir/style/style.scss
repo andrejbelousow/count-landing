@@ -13,6 +13,7 @@ $m72: 720px;
 $m70: 703px;
 $m68: 680px;
 $m58: 582px;
+$m46: 460px;
 
 %wrapper {
     max-width: 1600px;
@@ -79,6 +80,9 @@ padding-bottom: 150px;
     @media screen and (max-width: $m86) {
         padding-bottom: 120px;
     }
+    @media screen and (max-width: $m46) {
+        padding-bottom: 80px;
+    }
 }
 
 .flex-wrap {
@@ -113,6 +117,9 @@ padding-bottom: 150px;
         @media screen and (max-width: $m10) {
             padding: 25px 0 25px 0;
         }
+        @media screen and (max-width: $m86) {
+            justify-content: center;
+        }
 
     &-logo {
         margin-top: 6px;
@@ -123,6 +130,9 @@ padding-bottom: 150px;
             }
             @media screen and (max-width: $m58) {
                 margin-right: 35px;
+            }
+            @media screen and (max-width: $m46) {
+                margin-right: 25px;
             }
         
         a img {
@@ -138,6 +148,9 @@ padding-bottom: 150px;
                 }
                 @media screen and (max-width: $m58) {
                     width: 55px;
+                }
+                @media screen and (max-width: $m46) {
+                    width: 48px;
                 }
 
                 
@@ -164,6 +177,10 @@ padding-bottom: 150px;
                 font-size: 32px;
                 max-width: 356px;
             }
+            @media screen and (max-width: $m46) {
+                font-size: 28px;
+                max-width: 322px;
+            }
         }
         
     }
@@ -176,6 +193,9 @@ padding-bottom: 150px;
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    @media screen and (max-width: $m58) {
+        padding: 20px 0px;
+    }
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.55);
@@ -186,10 +206,16 @@ padding-bottom: 150px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        @media screen and (max-width: $m58) {
+            justify-content: space-around;
+        }
             &-item {
                 display: flex;
                 align-items: center;
                 margin-left: 15px;
+                @media screen and (max-width: $m58) {
+                    margin-left: 0px;
+                }
             }
     
             &-number a, &-email a {
@@ -215,7 +241,9 @@ padding-bottom: 150px;
             }
     
             &-questions {
-                
+                @media screen and (max-width: $m58) {
+                    display: none;
+                }
                 p {
                     font-family: $roboto;
                     font-size: 14px;
@@ -266,6 +294,12 @@ padding-bottom: 150px;
             @media screen and (max-width: $m86) {
                 font-size: 18px;
             }
+            @media screen and (max-width: $m58) {
+                line-height: 30px;
+            }
+            @media screen and (max-width: $m46) {
+                font-size: 16px;
+            }
             
 
         span {
@@ -275,6 +309,9 @@ padding-bottom: 150px;
 
     &__text:nth-child(2) {
         margin-bottom: 44px;
+            @media screen and (max-width: $m46) {
+                margin-bottom: 32px;
+            }
     } 
 
     &-buttom {
@@ -291,6 +328,9 @@ padding-bottom: 150px;
                 }
                 @media screen and (max-width: $m86) {
                     font-size: 18px;
+                }
+                @media screen and (max-width: $m46) {
+                    font-size: 16px;
                 }
                 
     
@@ -318,6 +358,9 @@ padding-bottom: 150px;
             align-items: center;
             flex-direction: column;
         }
+        @media screen and (max-width: $m46) {
+            height: 166px;
+        }
 
     &__rand, &__timer {
         @extend %header-buttons;
@@ -337,6 +380,10 @@ padding-bottom: 150px;
                  font-size: 20px;
                  padding: 22px 28px;
              }
+             @media screen and (max-width: $m46) {
+                font-size: 18px;
+                padding: 18px 28px;
+            }
 
         &:hover {
             border: 4px solid rgba(255, 255, 255, 1);
@@ -349,6 +396,9 @@ padding-bottom: 150px;
         padding: 27px 95px;
             @media screen and (max-width: $m86) {
                 padding: 22px 57px;
+            }
+            @media screen and (max-width: $m46) {
+                padding: 18px 57px;
             }
     }
 }
@@ -366,6 +416,9 @@ padding-bottom: 150px;
         }
         @media screen and (max-width: $m58) {
             height: 40px;
+        }
+        @media screen and (max-width: $m46) {
+            height: 26px;
         }
 }
 

@@ -15,6 +15,12 @@
         @media screen and (max-width: $m72) {
             padding: 175px 20px 175px 20px;
         }
+        @media screen and (max-width: $m58) {
+            padding: 155px 20px 155px 20px;
+        }
+        @media screen and (max-width: $m46) {
+            padding: 120px 20px 120px 20px;
+        }
         
 
     &-title {
@@ -32,6 +38,12 @@
             }
             @media screen and (max-width: $m72) {
                 font-size: 50px;
+            }
+            @media screen and (max-width: $m58) {
+                font-size: 40px;
+            }
+            @media screen and (max-width: $m46) {
+                font-size: 32px;
             }
     }
 
@@ -56,6 +68,14 @@
                 font-size: 28px;
                 padding: 27px 30px;
             }
+            @media screen and (max-width: $m58) {
+                font-size: 24px;
+                padding: 20px 24px;
+            }
+            @media screen and (max-width: $m46) {
+                font-size: 18px;
+                padding: 18px 24px;
+            }
 
         &:hover {
             color: rgba(255, 255, 255, 1);
@@ -70,6 +90,12 @@
         width: 624px;
             @media screen and (max-width: $m68) {
                 width: 526px;
+            }
+            @media screen and (max-width: $m58) {
+                width: 436px;
+            }
+            @media screen and (max-width: $m46) {
+                width: 352px;
             }
 
         .hours, .minutes, .seconds {
@@ -89,6 +115,15 @@
                 @media screen and (max-width: $m68) {
                     width: 158px;
                 }
+                @media screen and (max-width: $m58) {
+                    width: 128px;
+                    font-size: 50px;
+                }
+                @media screen and (max-width: $m46) {
+                    width: 100px;
+                    font-size: 38px;
+                }
+                
         }
 
         .seconds {
@@ -109,6 +144,12 @@
                 @media screen and (max-width: $m72) {
                     font-size: 30px;
                 }
+                @media screen and (max-width: $m58) {
+                    font-size: 25px;
+                }
+                @media screen and (max-width: $m46) {
+                    font-size: 20px;
+                }
         }
 
         .minutes::after {
@@ -121,6 +162,12 @@
                 @media screen and (max-width: $m72) {
                     font-size: 30px;
                 }
+                @media screen and (max-width: $m58) {
+                    font-size: 25px;
+                }
+                @media screen and (max-width: $m46) {
+                    font-size: 20px;
+                }
         }
 
         .seconds::after {
@@ -132,6 +179,12 @@
                 }
                 @media screen and (max-width: $m72) {
                     font-size: 30px;
+                }
+                @media screen and (max-width: $m58) {
+                    font-size: 25px;
+                }
+                @media screen and (max-width: $m46) {
+                    font-size: 20px;
                 }
         }
     }
@@ -152,6 +205,12 @@
                 }
                 @media screen and (max-width: $m72) {
                     font-size: 28px;
+                }
+                @media screen and (max-width: $m58) {
+                    font-size: 22px;
+                }
+                @media screen and (max-width: $m46) {
+                    font-size: 18px;
                 }
             }
 
@@ -189,6 +248,19 @@
                     @media screen and (max-width: $m68) {
                         max-width: 80px;
                     }
+                    @media screen and (max-width: $m68) {
+                        max-width: 60px;
+                    }
+                    @media screen and (max-width: $m58) {
+                        max-width: 60px;
+                        padding: 25px 30px;
+                    }
+                    @media screen and (max-width: $m46) {
+                        max-width: 34px;
+                        font-size: 26px;
+                        padding: 20px 30px;
+                    }
+                    
             }
     }
 
