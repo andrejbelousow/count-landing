@@ -1,0 +1,249 @@
+.random {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/telephone.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 230px 0 230px 0;
+    box-shadow: 0 0 0 720px rgba(0, 0, 0, 0.45) inset;
+        @media screen and (max-width: $m12) {
+            padding: 200px 0 200px 0;
+        }
+        @media screen and (max-width: $m86) {
+            padding: 185px 20px 185px 20px;
+        }
+        @media screen and (max-width: $m72) {
+            padding: 160px 20px 160px 20px;
+        }
+        @media screen and (max-width: $m70) {
+            padding: 160px 50px 160px 50px;
+        }
+        @media screen and (max-width: $m58) {
+            padding: 135px 50px 135px 50px;
+        }
+        @media screen and (max-width: $m46) {
+            padding: 115px 50px 115px 50px;
+        }
+        @media screen and (max-width: $m36) {
+            padding: 95px 50px 95px 50px;
+        }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &-title {
+            font-family: $roboto;
+            font-weight: $bold-weight;
+            font-size: 65px;
+            color: $white;
+            text-align: center;
+            letter-spacing: 2.5px;
+                @media screen and (max-width: $m12) {
+                    font-size: 60px;
+                }
+                @media screen and (max-width: $m86) {
+                    font-size: 55px;
+                }
+                @media screen and (max-width: $m72) {
+                    font-size: 50px;
+                }
+                @media screen and (max-width: $m58) {
+                    font-size: 40px;
+                }
+                @media screen and (max-width: $m46) {
+                    font-size: 32px;
+                }
+                @media screen and (max-width: $m36) {
+                    font-size: 28px;
+                }
+        }
+
+        &-count {
+            @extend %header-buttons;
+            padding: 30px 30px;
+            border: 4px solid rgba(255, 255, 255, 0.65);
+            font-size: 45px;
+            color: rgba(255, 255, 255, 0.65);
+                @media screen and (max-width: $m12) {
+                    font-size: 35px;
+                }
+                @media screen and (max-width: $m86) {
+                    font-size: 32px;
+                }
+                @media screen and (max-width: $m72) {
+                    font-size: 28px;
+                    padding: 27px 30px;
+                }
+                @media screen and (max-width: $m58) {
+                    font-size: 24px;
+                    padding: 20px 20px;
+                }
+                @media screen and (max-width: $m46) {
+                    font-size: 18px;
+                    padding: 18px 20px;
+                }
+                @media screen and (max-width: $m36) {
+                    font-size: 16px;
+                    padding: 18px 20px;
+                }
+
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+                border: 4px solid rgba(255, 255, 255, 1);
+                cursor: pointer;
+            }
+        }
+
+        &-form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+                @media screen and (max-width: $m70) {
+                    justify-content: center;
+                }
+
+            &__from,  &__to{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                label {
+                    font-family: $roboto;
+                    font-size: 65px;
+                    font-weight: $bold-weight;
+                    color: $white;
+                        @media screen and (max-width: $m12) {
+                            font-size: 60px;
+                        }
+                        @media screen and (max-width: $m86) {
+                            font-size: 55px;
+                        }
+                        @media screen and (max-width: $m72) {
+                            font-size: 45px;
+                        }
+                        @media screen and (max-width: $m58) {
+                            font-size: 35px;
+                        }
+                        @media screen and (max-width: $m46) {
+                            font-size: 26px;
+                        }
+                        @media screen and (max-width: $m36) {
+                            font-size: 22px;
+                        }
+                }
+                
+                input {
+                    padding: 35px 30px;
+                    border: 4px solid transparent;
+                    background-color: rgba(145, 145, 146, 0.3);
+                    text-align: center;
+                    font-family: $roboto;
+                    font-weight: $bold-weight;
+                    font-size: 65px;
+                    color: $white;
+                    transition: 0.2s;
+                    max-width: 220px;
+                    margin-left: 20px;
+                        @media screen and (max-width: $m12) {
+                            font-size: 60px;
+                        }
+                        @media screen and (max-width: $m86) {
+                            font-size: 55px;
+                            padding: 30px 0px;
+                        }
+                        @media screen and (max-width: $m72) {
+                            font-size: 45px;
+                        }
+                        @media screen and (max-width: $m58) {
+                            font-size: 35px;
+                        }
+                        @media screen and (max-width: $m46) {
+                            font-size: 32px;
+                            max-width: 110px;
+                            padding: 20px 30px;
+                        }
+                        @media screen and (max-width: $m36) {
+                            font-size: 28px;
+                            max-width: 70px;
+                        }
+                }
+
+                .focus {
+                    @extend %focus;
+                }
+
+                .inc-focus {
+                    @extend %inc-focus;
+                }
+
+                .inc-blur {
+                    @extend %inc-blur;
+                }
+            }
+
+
+
+            &__from {
+                margin-right: 45px;
+                    @media screen and (max-width: $m72) {
+                        margin-right: 35px;
+                    }
+                    @media screen and (max-width: $m70) {
+                        margin-right: 0px;
+                        margin-bottom: 25px;
+                    }
+            }
+
+        }
+
+        .warning {
+            @extend %warning;
+        }
+        
+        .random-result-block {
+            height: 235px;
+                @media screen and (max-width: $m58) {
+                    height: 198px;
+                }
+                @media screen and (max-width: $m36) {
+                    height: 168px;
+                }
+            .random-result {
+                display: none;
+                font-family: $roboto;
+                font-weight: $bold-weight;
+                font-size: 130px;
+                color: $white;
+                margin-top: 105px;
+                    @media screen and (max-width: $m12) {
+                        font-size: 120px;
+                    }
+                    @media screen and (max-width: $m86) {
+                        font-size: 110px;
+                    }
+                    @media screen and (max-width: $m72) {
+                        font-size: 100px;
+                    }
+                    @media screen and (max-width: $m58) {
+                        font-size: 80px;
+                    }
+                    @media screen and (max-width: $m46) {
+                        font-size: 65px;
+                    }
+                    @media screen and (max-width: $m36) {
+                        font-size: 55px;
+                    }
+                    
+            }
+        }
+
+        
+
+    }
+
+
+}
