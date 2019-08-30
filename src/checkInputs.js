@@ -20,6 +20,7 @@ function checkInputs() {
       item.onblur = function() {
         item.classList.remove("focus");
       };
+      // Попробовать использовать регулярное выражение в условии и, когда значение не будет ему соответствовать, делать то, что
       item.addEventListener("input", function() {
         let a = parseInt(item.value, 10);
         if ( isNaN(a) && item.value != '') {

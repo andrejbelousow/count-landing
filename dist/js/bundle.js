@@ -156,6 +156,7 @@ function checkInputs() {
       item.onblur = function() {
         item.classList.remove("focus");
       };
+      // Попробовать использовать регулярное выражение в условии и, когда значение не будет ему соответствовать, делать то, что
       item.addEventListener("input", function() {
         let a = parseInt(item.value, 10);
         if ( isNaN(a) && item.value != '') {
@@ -301,9 +302,15 @@ function Timer() {
               item.value = 00;
             }
           });
+          
       let a = parseInt(inputsTimer[0].value, 10),
           b = parseInt(inputsTimer[1].value, 10),
           c = parseInt(inputsTimer[2].value, 10);
+
+      inputsTimer.forEach(function (item) {
+          item.value = "";
+          item.disabled = "true";
+      });
 
       timeSet.setHours(timeSet.getHours() + a);
       timeSet.setMinutes(timeSet.getMinutes() + b);
@@ -360,7 +367,9 @@ function Timer() {
               item.textContent = 0;
               item.classList.remove("gone");
             });
-
+            inputsTimer.forEach(function(item) {
+                item.disabled = "";
+            });
           }
         }
       }
