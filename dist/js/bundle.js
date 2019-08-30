@@ -94,33 +94,42 @@
 /***/ (function(module, exports) {
 
 function Anchore() {
-    const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-    animationTime = 300,
-    framesCount = 80;
-  
-    anchors.forEach(function(item) {
-      item.addEventListener('click', function(e) {
-  
-        e.preventDefault();
-        
-        let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
-        
-        let scroller = setInterval(function() {
-  
-          let scrollBy = coordY / framesCount;
-          
-          if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-  
-            window.scrollBy(0, scrollBy);
-          } else {
-  
-            window.scrollTo(0, coordY);
-            clearInterval(scroller);
-          }
-  
-        }, animationTime / framesCount);
+    $(function () {
+      $("a[href^='#']").click(function () {
+        var _href = $(this).attr("href");
+        $("html, body").animate({
+          scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
       });
-    });
+    }); 
+    // const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
+    // animationTime = 300,
+    // framesCount = 80;
+  
+    // anchors.forEach(function(item) {
+    //   item.addEventListener('click', function(e) {
+  
+    //     e.preventDefault();
+        
+    //     let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
+        
+    //     let scroller = setInterval(function() {
+  
+    //       let scrollBy = coordY / framesCount;
+          
+    //       if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
+  
+    //         window.scrollBy(0, scrollBy);
+    //       } else {
+  
+    //         window.scrollTo(0, coordY);
+    //         clearInterval(scroller);
+    //       }
+  
+    //     }, animationTime / framesCount);
+    //   });
+    // });
   }
 
 module.exports = Anchore;
@@ -234,14 +243,19 @@ function Random() {
   let = buttons = document.querySelectorAll("button"),
         inputs = document.querySelectorAll("input"),
         inputsArray = Array.from(inputs),
+        warning = document.querySelector(".warning"),
         randomInputs = inputsArray.slice(0, 2);
     buttons[0].addEventListener("click", function() {
       let f = parseInt(randomInputs[0].value),
           g = parseInt(randomInputs[1].value),
           randomResult = document.querySelector(".random-result");
           a = Math.floor(Math.random() * (g - f) + f);
-      randomResult.textContent = a;
-      randomResult.style.display = "block";
+          if(isNaN(a)) {
+            warning.textContent = "Заполните оба поля";
+          } else {
+            randomResult.textContent = a;
+            randomResult.style.display = "block";
+          }
     });
 }
 module.exports = Random;
